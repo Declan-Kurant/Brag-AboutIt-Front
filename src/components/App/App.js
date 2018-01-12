@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import './App.css'
 
-//IMPORT ALL COMPONENTS
-import NewMessage from '../NewMessage/NewMessage'
-import Message from '../Message/Message'
+import NewBoast from '../NewBoast/NewBoast'
 import Dashboard from '../Dashboard/Dashboard'
-import Inbox from '../Inbox/Inbox'
-import Test from '../Test/Test'
 import BoastList from '../BoastList/BoastList'
 class App extends Component {
 	render() {
@@ -18,10 +14,9 @@ class App extends Component {
 					<Switch>
 						<Route
 							exact
-							path="/new-message"
-							render={props => <NewMessage {...props} />}
+							path="/new-boast"
+							render={props => <NewBoast {...props} />}
 						/>
-						<Route exact path="/inbox" render={props => <Inbox {...props} />} />
 						<Route
 							exact
 							path="/boastlist"

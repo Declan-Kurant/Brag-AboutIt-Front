@@ -1,25 +1,28 @@
 import React, { Component } from 'react'
-import RecipientBox from '../RecipientBox/RecipientBox'
-import { createMessage } from '../../services/message'
-import './NewMessage.css'
+import { createBoast } from '../../services/boast'
+import './NewBoast.css'
 
-class NewMessage extends Component {
+class NewBoast extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			txt_content: ''
+			txt_content: '',
+			from: '',
+			about: ''
 		}
 
-		// this.createMessage = this.createMessage.bind(this)
+		// this.createBoast = this.createBoast.bind(this)
 	}
 
 	handleSubmitInput(e) {
 		e.preventDefault()
 
-		let newMessage = {
-			txt_content: this.state.txt_content
+		let newBoast = {
+			txt_content: this.state.txt_content,
+			from: this.state.from,
+			about: this.state.about
 		}
-		this.createMessage(newMessage)
+		this.createBoast(newBoast)
 	}
 
 	render() {
@@ -60,4 +63,4 @@ class NewMessage extends Component {
 		)
 	}
 }
-export default NewMessage
+export default NewBoast

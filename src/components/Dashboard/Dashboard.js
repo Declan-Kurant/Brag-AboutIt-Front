@@ -7,7 +7,7 @@ const Dashboard = () => (
 	<header>
 		<div className="nav">
 			<div className="app-name">
-				<h2>Brag AboutIt</h2>
+				<h2 id="brag">Brag AboutIt</h2>
 			</div>
 			<div className="nav-container">
 				<nav>
@@ -15,10 +15,8 @@ const Dashboard = () => (
 						<Link to="/boastlist"> Home </Link>
 					</div>
 					<div className="nav-item">
-						<Link to="/new-message"> Brag About Someone </Link>
+						<Link to="/new-boast"> Brag About Someone </Link>
 					</div>
-					<div className="nav-item">small letters</div>
-					<div className="nav-item">big letters</div>
 				</nav>
 			</div>
 		</div>

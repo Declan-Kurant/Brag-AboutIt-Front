@@ -1,4 +1,4 @@
-.message-list {
+.boast-list {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -6,7 +6,7 @@
 	margin-top: 20px;
 }
 
-.individual-message {
+.individual-boast {
 	border: 1px solid black;
 	height: 100px;
 	width: 800px;
@@ -21,8 +21,39 @@
 	left: 80%;
 }
 
-.message {
+.boast {
 	position: relative;
 	top: -50%;
 	left: 22%;
+}
+
+.from {
+	position: relative;
+	left: 2%;
+}
+
+.large-p-tag {
+	font-size: 135%;
+}
+
+.selectors {
+	display: flex;
+	flex-direction: row;
+}
+
+.size-selector,
+.small {
+	height: 60px;
+	width: 80px;
+	padding: 5px;
+	margin-right: 5px;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 5px;
+	text-align: center;
+	background-color: #f4f4ab;
+	border-radius: 15px;
+}
+.small {
+	font-size: 80%;
 }
