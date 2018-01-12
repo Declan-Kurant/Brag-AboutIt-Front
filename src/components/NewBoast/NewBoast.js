@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { createBoast } from '../../services/boast'
 import './NewBoast.css'
-
+import axios from 'axios'
 class NewBoast extends Component {
 	constructor(props) {
 		super(props)
@@ -11,18 +11,29 @@ class NewBoast extends Component {
 			about: ''
 		}
 
-		// this.createBoast = this.createBoast.bind(this)
+		this.createBoast = this.createBoast.bind(this)
 	}
 
 	handleSubmitInput(e) {
 		e.preventDefault()
 
 		let newBoast = {
-			txt_content: this.state.txt_content,
-			from: this.state.from,
-			about: this.state.about
+			txt_content: e.target.value,
+			from: e.target.value,
+			about: e.target.value
 		}
 		this.createBoast(newBoast)
+	}
+
+	createBoast(newBoast) {
+		axios
+			.post(`localhost:3001/boasts`, newBoast)
+			.then(response => {
+				this.props.history.push('/boasts')
+			})
+			.catch(err => {
+				console.log(err)
+			})
 	}
 
 	render() {
