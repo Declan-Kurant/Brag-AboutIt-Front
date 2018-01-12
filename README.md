@@ -3,7 +3,7 @@ Brag AboutIt is a web app, primarily for grandparents/grandchildren to brag abou
 
 
 #Getting Started
-To run the app, there aren't any required technologies, simply visit the webpage at __________ .
+To run the app, there aren't any required technologies, simply visit the webpage at brag-aboutit.surge.sh
 
 
 # Technologies Used
@@ -11,5 +11,5 @@ MERN Stack (MongoDB, Express, React, Node.js)
 JavaScript
 HTML/CSS
 
-#Future Versions
+# Future Versions
 Going forwards there are several features I would like to add, most notably, the ability to tag each boast with a symbol such as a trophy or diploma.
