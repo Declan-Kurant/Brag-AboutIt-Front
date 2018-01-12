@@ -1,0 +1,28 @@
+.message-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.individual-message {
+	border: 1px solid black;
+	height: 100px;
+	width: 800px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+	background-color: #f4f4ab;
+}
+
+.about {
+	position: relative;
+	top: -35%;
+	left: 80%;
+}
+
+.message {
+	position: relative;
+	top: -50%;
+	left: 22%;
+}

@@ -1,0 +1,52 @@
+.nav-container {
+	top: 15%;
+	right: 28%;
+	height: 75px;
+	width: 100px;
+	float: right;
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.nav-item {
+	height: 60px;
+	width: 80px;
+	flex-direction: row;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 5px;
+	text-align: center;
+	background-color: #f4f4ab;
+	border-radius: 15px;
+}
+.nav-item-small {
+	height: 30px;
+	width: 80px;
+	flex-direction: row;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 5px;
+	text-align: center;
+	background-color: #f4f4ab;
+	border-radius: 15px;
+}
+
+.app-name {
+	float: left;
+	height: 65px;
+	width: 265px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #f4f4ab;
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 250%;
+	position: relative;
+	top: -35%;
+	color: #3547d0;
+}
