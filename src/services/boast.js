@@ -16,5 +16,4 @@ export function createBoast(newBoast) {
 
 export default {
 	createBoast
-	// getBoasts
 }

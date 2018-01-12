@@ -9,14 +9,8 @@ class NewBoast extends Component {
 		this.state = {
 			txt_content: '',
 			from: '',
-			about: '',
-			redirect: false
+			about: ''
 		}
-
-		// this.createBoast = this.createBoast.bind(this)
-	}
-	handleRedirect(e) {
-		this.setState({ redirect: true })
 	}
 
 	handleSubmitInput(e) {
@@ -26,11 +20,7 @@ class NewBoast extends Component {
 			from: this.state.from,
 			about: this.state.about
 		}
-
-		console.log(newBoast)
-
 		createBoast(newBoast)
-		this.handleRedirect()
 	}
 
 	handleTxtContent(e) {
@@ -51,7 +41,6 @@ class NewBoast extends Component {
 	}
 
 	render() {
-		let { redirect } = this.state.redirect
 		return (
 			<div>
 				<div className="form-container">
@@ -87,7 +76,6 @@ class NewBoast extends Component {
 							<input type="submit" className="btn" value="Tell everyone!" />
 						</div>
 					</form>
-					{/* {redirect && <Redirect to={'/boastlist'} />} */}
 				</div>
 			</div>
 		)
