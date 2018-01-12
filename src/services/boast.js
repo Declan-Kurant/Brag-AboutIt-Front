@@ -3,6 +3,7 @@ import axios from 'axios'
 let servicePath = 'http://localhost:3001'
 
 export function createBoast(newBoast) {
+	console.log(newBoast)
 	axios
 		.post(`${servicePath}/boasts`, newBoast)
 		.then(response => {

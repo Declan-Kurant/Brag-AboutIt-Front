@@ -13,8 +13,9 @@ class BoastList extends Component {
 		axios
 			.get(`http://localhost:3001/boasts`)
 			.then(res => {
+				console.log(res.data)
 				this.setState((this.state.messages = res.data))
-				console.log(this.state.messages[2].from)
+				console.log(this.state.messages[4].from)
 			})
 			.catch(err => console.log(err))
 	}
@@ -36,10 +37,10 @@ class BoastList extends Component {
 		let fontSize = this.state.largeFont ? 'large-p-tag' : ''
 		let messages = this.state.messages.map((message, index) => {
 			return (
-				<div className={'boast-list'}>
+				<div className={'boast-list'} key={index}>
 					{this.state.messages.length && (
 						<div>
-							<div key={index} className="individual-boast">
+							<div className="individual-boast">
 								<p className="from">
 									{' '}
 									From : <strong>{message.from}</strong>{' '}
